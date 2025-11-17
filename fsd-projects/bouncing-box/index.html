@@ -87,7 +87,7 @@ var positionX = 0
 positionX = positionX + 10
 moveBoxTo(positionX)
 var points = 0
-
+var speed = 10
 
 
 
@@ -103,7 +103,7 @@ var points = 0
          * If the box drifts off the screen, turn it around!
          */
         function update() {
-
+positionX = positionX + speed
 
 
 
@@ -125,7 +125,7 @@ var points = 0
           positionX = 0
           changeBoxText(points)
                points = points + 1
-
+speed = speed + 3
 
         }
 
